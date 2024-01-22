@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and Rowspan Examples</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Colspan Example</h1>
+    <table>
+        <tr>
+            <th>S.no</th>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Logesh</td>
+            <td>Perumal</td>
+        </tr>
+        <tr>
+            <th>Product</th>
+            <td colspan="2">Laptop</td>
+        </tr>
+        <tr>
+            <th>Sales amount</th>
+            <td colspan="2">80000</td>
+        </tr>
+    </table>
+
+    <h1>Rowspan Example</h1>
+    <table>
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Product</th>
+            <th>Sales amount</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Logesh</td>
+            <td rowspan="2">Laptop</td>   
+            <td rowspan="2">80000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Perumal</td>
+        </tr>
+    </table>
+
+</body>
+</html>
