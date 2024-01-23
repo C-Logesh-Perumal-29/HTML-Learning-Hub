@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #3f5efb, #fc466b);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        table {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        th, td {
+            color: #333;
+        }
+
+        th {
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        input[type="mail"],
+        input[type="range"],
+        input[type="file"],
+        input[type="submit"],
+        button,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 120px;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <center>
+            <table border="0" width="600" cellpadding="10" cellspacing="5">
+                <tr>
+                    <th colspan="2">
+                        <p style="font-size: 20px">Registration Form</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select>
+                            <option>Select Course</option>
+                            <option>B.Sc Computer Science</option>
+                            <option>B.Sc Maths</option>
+                            <option>B.Sc Physics</option>
+                            <option>B.Sc Chemistry</option>
+                            <option>M.Sc Computer Science</option>
+                            <option>M.Sc Maths</option>
+                            <option>M.Sc Physics</option>
+                            <option>M.Sc Chemistry</option>
+                            <option>Computer Science Engineering (CSE)</option>
+                            <option>Electrical And Electronical Engineering (EEE)</option>
+                            <option>B.Tech - Information Technology (IT)</option>
+                            <option>B.Tech - Cyber Security</option>
+                            <option>B.Tech - Artificial Intelligence & Data Science (AI & DS)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Known Languages</td>
+                    <td>
+                        <input type="checkbox">Tamil
+                        <input type="checkbox">English
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Japanese                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="mail"></td>
+                </tr>
+                <tr>
+                    <td>Range</td>
+                    <td><input type="range"></td>
+                </tr>
+                <tr>
+                    <td>Skills</td>
+                    <td>
+                        <input type="checkbox">Python
+                        <input type="checkbox">C
+                        <input type="checkbox">C++
+                        <input type="checkbox">HTML
+                        <input type="checkbox">Java
+                        <input type="checkbox">AI
+                    </td>
+                </tr>
+                <tr>
+                    <td>Browse</td>
+                    <td><input type="File"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <input type="Submit" value="Save">
+                            <input type="Submit" value="Clear">
+                            <button>Update</button>
+                            <button>Delete</button>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+</html>
